@@ -35,9 +35,11 @@ body {
     opacity: 0;
     transform: translateX(-10rem);
   }
+
   80% {
     transform: translateX(1rem);
   }
+
   100% {
     opacity: 1;
     transform: translate(0);
@@ -49,9 +51,11 @@ body {
     opacity: 0;
     transform: translateX(10rem);
   }
+
   80% {
     transform: translateX(-1rem);
   }
+
   100% {
     opacity: 1;
     transform: translate(0);
@@ -63,6 +67,7 @@ body {
     opacity: 0;
     transform: translateY(3rem);
   }
+
   100% {
     opacity: 1;
     transform: translate(0);
@@ -83,11 +88,9 @@ body {
 
 .header {
   height: 100vh;
-  background-image: linear-gradient(
-      to right bottom,
+  background-image: linear-gradient(to right bottom,
       rgba(255, 51, 102, 0.8),
-      rgba(186, 38, 93, 0.8)
-    ),
+      rgba(186, 38, 93, 0.8)),
     url(./img/pustemircanahediye.png);
   background-size: cover;
   background-position: top;
@@ -230,11 +233,9 @@ body {
 
 .information-section {
   padding: 6rem 0;
-  background-image: linear-gradient(
-      to right bottom,
+  background-image: linear-gradient(to right bottom,
       rgba(39, 35, 35, 0.8),
-      rgba(10, 8, 8, 0.8)
-    ),
+      rgba(10, 8, 8, 0.8)),
     url(./img/pustemircanahediye.png);
   background-size: cover;
   background-position: center;
@@ -262,33 +263,34 @@ body {
   padding: 0 8rem;
   font-weight: 400;
 }
-.information-section__text_lection-1{
+
+.information-section__text_lection-1 {
   font-size: 1.9rem;
   color: var(--color-black-dark-1);
   letter-spacing: 6 25rem;
   font-weight: 100;
   padding: 0 3rem;
-  font-weight:600;
+  font-weight: 600;
   transform: translateX(-5%);
 }
 
-.information-section__text_lection-2{
+.information-section__text_lection-2 {
   font-size: 1.9rem;
   color: var(--color-black-dark-1);
   letter-spacing: 6 25rem;
   font-weight: 100;
   padding: 0 3rem;
-  font-weight:600;
+  font-weight: 600;
   transform: translateX(-5%);
 }
 
-.information-section__text_lection-3{
+.information-section__text_lection-3 {
   font-size: 1.9rem;
   color: var(--color-black-dark-1);
   letter-spacing: 6 25rem;
   font-weight: 100;
   padding: 0 3rem;
-  font-weight:600;
+  font-weight: 600;
   transform: translateX(-5%);
 }
 
@@ -324,11 +326,9 @@ body {
   transition: all 0.5s;
   padding-top: 4rem;
   padding-bottom: 6rem;
-  background-image: linear-gradient(
-      to right bottom,
+  background-image: linear-gradient(to right bottom,
       rgba(250, 249, 249, 0.8),
-      rgba(244, 242, 242, 0.8)
-    ),
+      rgba(244, 242, 242, 0.8)),
     url(./img/pustemircanahediye.png);
   background-size: cover;
   background-position: bottom;
@@ -509,11 +509,38 @@ body {
 .activity {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   padding: 3rem 6rem;
   margin-bottom: 3rem;
   border-radius: 10px;
   box-shadow: 0 2rem 4rem rgb(240, 229, 229);
   background-color: var(--color-grey-light-1);
+}
+
+#activity-row-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 3rem;
+}
+
+#activity-row-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#activity-row-3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 3rem;
+}
+
+#activity-row-4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 /*.activity-image__person {
@@ -596,7 +623,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-left: 6rem;
   transition: all 0.5s;
 }
 
@@ -868,6 +894,30 @@ body {
     justify-content: center;
     align-items: center;
   }
+
+  #activity-row-1 {
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+  }
+
+  #activity-row-2 {
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+  }
+
+  #activity-row-3 {
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+  }
+
+  #activity-row-4 {
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+  }
 }
 
 @media (max-width: 714px) {
@@ -878,4 +928,17 @@ body {
   .activity-text__name {
     font-size: 2.5rem;
   }
+}
+
+.card div {
+  display: flex;
+  justify-content: center;
+}
+
+.card img {
+  border-radius: 1rem;
+}
+
+.card {
+  padding: 3rem;
 }
